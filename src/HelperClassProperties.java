@@ -8,6 +8,13 @@ public class HelperClassProperties {
         System.out.println(Arrays.toString(firstArray));
         Arrays.sort(firstArray);
         System.out.println(Arrays.toString(firstArray));
+        System.out.println("...........".repeat(5));
+
+        int[] secondArray = new int[10];
+        System.out.println(Arrays.toString(secondArray));
+        Arrays.fill(secondArray,5);
+        System.out.println(Arrays.toString(secondArray));
+        
 
     }
     public static int[] getRandomArray(int len){
