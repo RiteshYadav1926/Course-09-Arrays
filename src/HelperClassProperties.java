@@ -14,7 +14,16 @@ public class HelperClassProperties {
         System.out.println(Arrays.toString(secondArray));
         Arrays.fill(secondArray,5);
         System.out.println(Arrays.toString(secondArray));
-        
+        System.out.println("...........".repeat(5));
+
+        int[] thirdArray = getRandomArray(10);
+        System.out.println(Arrays.toString(thirdArray));
+        int[] fourthArray = Arrays.copyOf(thirdArray,thirdArray.length);
+        System.out.println(Arrays.toString(fourthArray));
+        Arrays.sort(fourthArray);
+        System.out.println(Arrays.toString(thirdArray));
+        System.out.println(Arrays.toString(fourthArray));
+
 
     }
     public static int[] getRandomArray(int len){
