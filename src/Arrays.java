@@ -15,5 +15,14 @@ public class Arrays {
         System.out.println("First Element of Array = " + firstTen[0]);
         int arrayLength = firstTen.length;
         System.out.println("Array Length = " + arrayLength);
+        System.out.println("Last Element = " + firstTen[arrayLength-1]);
+
+        System.out.println("--".repeat(20));
+
+        int[] newArray;
+        newArray = new int[]{5,4,3,2,1,0};
+        for (int i=0; i < newArray.length; i++){
+            System.out.println("Element at Index " + i+ " is =" + newArray[i]);
+        }
     }
 }
