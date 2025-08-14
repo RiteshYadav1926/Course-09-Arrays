@@ -23,7 +23,12 @@ public class HelperClassProperties {
         Arrays.sort(fourthArray);
         System.out.println(Arrays.toString(thirdArray));
         System.out.println(Arrays.toString(fourthArray));
+        System.out.println("...........".repeat(5));
 
+        int[] smallerArray = Arrays.copyOf(thirdArray,5);
+        System.out.println(Arrays.toString(smallerArray));
+        int[] longerArray = Arrays.copyOf(thirdArray,15);
+        System.out.println(Arrays.toString(longerArray));
 
     }
     public static int[] getRandomArray(int len){
