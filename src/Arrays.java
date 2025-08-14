@@ -35,7 +35,7 @@ public class Arrays {
         Object[] objectArray = new Object[3];
         objectArray[0] = "Hello";
         objectArray[1] = new StringBuilder("World");
-        objectArray[2] = newArray;
+        objectArray[2] = java.util.Arrays.toString(newArray);
 
         System.out.println(java.util.Arrays.toString(objectArray));
     }
