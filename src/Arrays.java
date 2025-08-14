@@ -10,5 +10,10 @@ public class Arrays {
 
         System.out.println(myIntArray[0]);
         System.out.println(myDoubleArray[3]);
+
+        int[] firstTen = {1,2,3,4,5,6,7,8,9,10};
+        System.out.println("First Element of Array = " + firstTen[0]);
+        int arrayLength = firstTen.length;
+        System.out.println("Array Length = " + arrayLength);
     }
 }
