@@ -28,5 +28,15 @@ public class Arrays {
         for (int i=0; i < newArray.length; i++){
             System.out.println("Element at Index " + i+ " is =" + newArray[i]);
         }
+        System.out.println(".....".repeat(10));
+
+        System.out.println(java.util.Arrays.toString(newArray));
+
+        Object[] objectArray = new Object[3];
+        objectArray[0] = "Hello";
+        objectArray[1] = new StringBuilder("World");
+        objectArray[2] = newArray;
+
+        System.out.println(java.util.Arrays.toString(objectArray));
     }
 }
