@@ -37,6 +37,15 @@ public class HelperClassProperties {
         if (Arrays.binarySearch(nameArray,"Dale") > 0){
             System.out.println("Found Dale in Array");
         }
+        System.out.println("...........".repeat(5));
+
+        int[] s1 = {1,2,3,4,5};
+        int[] s2 = {1,2,3,4,5};
+        if (Arrays.equals(s1,s2)){
+            System.out.println("Both Arrays are Equal");
+        } else{
+            System.out.println("Arrays are not Equal");
+        }
 
     }
     public static int[] getRandomArray(int len){
