@@ -29,6 +29,14 @@ public class HelperClassProperties {
         System.out.println(Arrays.toString(smallerArray));
         int[] longerArray = Arrays.copyOf(thirdArray,15);
         System.out.println(Arrays.toString(longerArray));
+        System.out.println("...........".repeat(5));
+
+        String[] nameArray = {"Albie","Jordan","Kobe","Steph","Lebron","Dale"};
+        Arrays.sort(nameArray);
+        System.out.println(Arrays.toString(nameArray));
+        if (Arrays.binarySearch(nameArray,"Dale") > 0){
+            System.out.println("Found Dale in Array");
+        }
 
     }
     public static int[] getRandomArray(int len){
