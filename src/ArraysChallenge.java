@@ -1,34 +1,33 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ArraysChallenge {
-    public static void main(String[] args) {
-        int[] trial = getRandomArray(10);
-        System.out.println("Array to Arrange in Descending Order = " + Arrays.toString(trial));
+        public static int[] getIntegers(int size) {
+            int[] toSort = new int[size];
+            Scanner scanner = new Scanner(System.in);
+            for (int i = 0; i < size; i++) {
+                toSort[i] = scanner.nextInt(); // no extra prints
+            }
+            return toSort; // return directly, no printing
+        }
 
-        boolean check = true;
-        while (check) {
-            check = false;
-            for (int i = 0; i < trial.length - 1; i++) {
-                int n;
-                if (trial[i] < trial[i + 1]) {
-                    n = trial[i];
-                    trial[i] = trial[i + 1];
-                    trial[i + 1] = n;
-                    check = true;
-                }
+        public static void printArray(int[] arrayToPrint) {
+            for (int i = 0; i < arrayToPrint.length; i++) {
+                System.out.println("Element " + i + " contents " + arrayToPrint[i]);
             }
         }
-        System.out.println("Array in Descending Order = " + Arrays.toString(trial));
-    }
 
-    public static int[] getRandomArray(int len){
-
-        Random random = new Random();
-        int[] newInt = new int[len];
-        for (int i = 0; i<len; i++){
-            newInt[i] = random.nextInt(100);
+        public static int[] sortIntegers(int[] arrayToSort) {
+            int[] sorted = Arrays.copyOf(arrayToSort, arrayToSort.length);
+            Arrays.sort(sorted);
+            // reverse
+            for (int i = 0; i < sorted.length / 2; i++) {
+                int temp = sorted[i];
+                sorted[i] = sorted[sorted.length - 1 - i];
+                sorted[sorted.length - 1 - i] = temp;
+            }
+            return sorted;
         }
-        return newInt;
-    }
+
 }
