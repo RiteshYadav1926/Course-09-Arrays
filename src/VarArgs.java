@@ -12,6 +12,10 @@ public class VarArgs {
 
         System.out.println("....".repeat(20));
         printText();
+
+        System.out.println("....".repeat(20));
+        String[] sArray = {"first", "second", "third","fourth", "fifth"};
+        System.out.println(String.join("," , sArray));
     }
     public static void printText(String... textList){
         for (String t : textList){
