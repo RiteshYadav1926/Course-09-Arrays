@@ -6,15 +6,20 @@ public class ArraysChallenge {
         int[] trial = getRandomArray(10);
         System.out.println("Array to Arrange in Descending Order = " + Arrays.toString(trial));
 
-        Arrays.sort(trial);
-
-        int[] descending = new int[trial.length];
-        for (int i = 0; i < trial.length; i++){
-            int n = trial.length;
-            descending[i] = trial[n-1-i];
+        boolean check = true;
+        while (check) {
+            check = false;
+            for (int i = 0; i < trial.length - 1; i++) {
+                int n;
+                if (trial[i] < trial[i + 1]) {
+                    n = trial[i];
+                    trial[i] = trial[i + 1];
+                    trial[i + 1] = n;
+                    check = true;
+                }
+            }
         }
-        System.out.println("Array in Descending Order = " + Arrays.toString(descending));
-
+        System.out.println("Array in Descending Order = " + Arrays.toString(trial));
     }
 
     public static int[] getRandomArray(int len){
