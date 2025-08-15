@@ -7,8 +7,13 @@ public class VarArgs {
         System.out.println("....".repeat(20));
         printText("Hello");
 
+        System.out.println("....".repeat(20));
+        printText("My","Hello","to","the","World");
+
+        System.out.println("....".repeat(20));
+        printText();
     }
-    public static void printText(String[] textList){
+    public static void printText(String... textList){
         for (String t : textList){
             System.out.println(t);
         }
