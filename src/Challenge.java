@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Challenge {
     public static void main(String[] args) {
 
-        readIntegers();
-
+        int[] array = readIntegers();
+        getMin(array);
     }
     public static int[] readIntegers(){
         Scanner scanner = new Scanner(System.in);
@@ -17,7 +17,17 @@ public class Challenge {
         for (int i = 0; i < myArray.length; i++) {
             array[i] = Integer.parseInt(myArray[i].trim());
         }
-        System.out.println(Arrays.toString(array));
         return array;
+    }
+
+    public static int getMin(int[] arrays){
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arrays.length; i++){
+            if (arrays[i] < min){
+                min = arrays[i];
+            }
+        }
+        System.out.println("The Minimum value in the Array is " + min);
+        return min;
     }
 }
