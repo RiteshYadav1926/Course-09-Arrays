@@ -15,7 +15,7 @@ public class Challenge {
         String[] myArray = elements.split(",");
         int[] array = new int[myArray.length];
         for (int i = 0; i < myArray.length; i++) {
-            array[i] = Integer.parseInt(myArray[i]);
+            array[i] = Integer.parseInt(myArray[i].trim());
         }
         System.out.println(Arrays.toString(array));
         return array;
