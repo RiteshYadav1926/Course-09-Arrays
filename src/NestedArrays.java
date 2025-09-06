@@ -12,10 +12,16 @@ public class NestedArrays {
         }
         System.out.println(".................................................");
 
-        for (int i = 0;i< array1.length;i++){
-            var innerArray = array1;
-            for (int j = 0;j<array1.length;j++){
-                System.out.print(array1[i][j] + " ");
+//        for (int i = 0;i< array1.length;i++){
+//            var innerArray = array1;
+//            for (int j = 0;j<array1.length;j++){
+//                System.out.print(array1[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+        for (var Outer: array1){
+            for (var Elements: Outer){
+                System.out.print(Elements + " ");
             }
             System.out.println();
         }
