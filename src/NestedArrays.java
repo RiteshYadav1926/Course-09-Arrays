@@ -19,11 +19,13 @@ public class NestedArrays {
 //            }
 //            System.out.println();
 //        }
-        for (var Outer: array1){
-            for (var Elements: Outer){
-                System.out.print(Elements + " ");
-            }
-            System.out.println();
-        }
+//        for (var Outer: array1){
+//            for (var Elements: Outer){
+//                System.out.print(Elements + " ");
+//            }
+//            System.out.println();
+//        }
+
+        System.out.println(Arrays.deepToString(array1));
     }
 }
