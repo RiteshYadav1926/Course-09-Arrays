@@ -8,7 +8,7 @@ public class NestedArrays {
         System.out.println("Length of Array = " + array1.length);
 
         for (int[] outer: array1){
-            System.out.println(outer);
+            System.out.println(Arrays.toString(outer));
         }
     }
 }
