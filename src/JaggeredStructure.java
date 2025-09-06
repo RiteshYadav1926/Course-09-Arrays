@@ -8,5 +8,13 @@ public class JaggeredStructure {
 
         anyArray[0] = new String[]{"a","b","c"};
         System.out.println(Arrays.deepToString(anyArray));
+
+        anyArray[1] = new String[][]{
+                {"1","2"},
+                {"11","12","13"},
+                {"21","22","23","24"}
+        };
+        System.out.println(Arrays.deepToString(anyArray));
+        
     }
 }
